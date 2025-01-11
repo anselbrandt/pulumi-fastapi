@@ -10,6 +10,15 @@ docker run -d -p 8000:8000 pulumi-fastapi
 
 ## Deploy
 
+- Launch EC2 instance
+- Install Caddy
+- `sudo systemctl stop caddy`
+- Edit Caddyfile hostname and add reverse_proxy
+- `sudo systemctl start caddy`
+- Install docker
+- Configure docker to work as non-root
+- Build and run docker containe
+
 ```
 chmod 600 keypair.pem
 
